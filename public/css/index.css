@@ -1,0 +1,137 @@
+/* GENERAL */
+* { font-family: roboto; }
+
+body {
+	margin: 0;
+	background-color: #CCC;
+}
+
+/* NOTE */
+#note { 
+	text-align: center; 
+	color: #333;
+}
+#note a { text-decoration: none; }
+
+
+/* HEADER */
+header {
+	background-color: #05F;
+	padding: 3px;
+	margin-bottom: 10px;
+}
+
+#headerText {
+	text-align: center;
+	font-size: 40px;
+	color: white;
+}
+
+
+/* ANIME */
+.anime {
+	background-color: #FFF;
+	margin: 10px;
+	padding: 10px;
+	box-shadow: 0 0 10px #0006;
+}
+
+.titleAnime { font-size: 27px; }
+.infoAnime { text-align: center; }
+.filler { font-size: 60px; }
+.num { font-weight: normal; }
+
+.infoAnime * { 
+	text-align: center;
+	margin: 10% 0; 
+	padding: 10px 0;
+}
+
+
+
+
+
+
+
+
+
+/* MOBILE */
+@media only screen and (max-width: 733px) {
+	.anime * {
+		margin: 4px;
+	}
+
+	.anime .imagem {
+		width: 100%;
+		height: 100%;
+	}	
+
+	figure {
+		width: 95%;
+		margin: 0 auto;
+		padding: 0 auto;
+		text-align: center;
+	}
+
+	#headerText {
+		font-size: 24px;
+	}
+}
+
+
+
+
+
+/* MEDIUM */
+@media only screen and (min-width: 734px) and (max-width: 1119px) {
+	.anime {
+		width: 70%;
+		margin: 0 auto;
+		overflow: auto;
+	}
+		
+	.anime .imagem { float: left; }
+
+	.infoAnime {
+		float: right;
+		width: 60%;
+	}
+}
+
+@media only screen and (min-width: 734px) and (max-width: 869px) {
+	.infoAnime {
+		float: right;
+		width: 50%;
+	}	
+}
+
+
+
+
+
+
+
+/* LARGE */
+@media only screen and (min-width: 1120px) {
+	div.anime {
+		width: 47%;
+		float: right;
+		overflow: auto;
+	}
+	
+	.anime { height: 360px; }
+	.anime * { margin: 10px; }
+	.anime:nth-child(even) { float: left; }
+	.anime .imagem { float: left; }
+
+	.infoAnime {
+		float: right;
+		width: 50%;
+	}
+}
+
+@media only screen and (min-width: 1120px) and (max-width: 1350px) {
+	div.anime {
+		width: 46.3%;
+	}
+}
